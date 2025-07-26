@@ -1,0 +1,63 @@
+#################################################################
+# Enterprise Linux Toolkit - Configuration File
+# Copy this file to toolkit.conf and customize settings
+#################################################################
+
+# Email Configuration
+ADMIN_EMAIL="admin@company.com"
+SMTP_SERVER="mail.company.com"
+SMTP_PORT="25"
+EMAIL_FROM="noreply@company.com"
+EMAIL_ENABLED="false"
+
+# Alert Thresholds
+DISK_WARNING_THRESHOLD="80"
+DISK_CRITICAL_THRESHOLD="90"
+CPU_WARNING_THRESHOLD="75"
+CPU_CRITICAL_THRESHOLD="85"
+MEMORY_WARNING_THRESHOLD="80"
+MEMORY_CRITICAL_THRESHOLD="90"
+LOAD_WARNING_THRESHOLD="5"
+LOAD_CRITICAL_THRESHOLD="10"
+
+# Backup Configuration
+BACKUP_RETENTION_DAYS="30"
+BACKUP_LOCAL_PATH="/var/backups/toolkit-data"
+BACKUP_REMOTE_HOST="backup.company.com"
+BACKUP_REMOTE_PATH="/backups/systems"
+BACKUP_REMOTE_USER="backup-user"
+
+# Monitoring Settings
+HEALTH_CHECK_INTERVAL="daily"
+DASHBOARD_RETENTION_DAYS="90"
+LOG_RETENTION_DAYS="180"
+REPORT_OUTPUT_DIR="/var/reports/system-health"
+
+# Security Settings
+CIS_BENCHMARK_LEVEL="1"
+SECURITY_SCAN_SCHEDULE="weekly"
+FAILED_LOGIN_THRESHOLD="10"
+SELINUX_ENFORCING="true"
+
+# Service Monitoring
+CRITICAL_SERVICES="sshd,NetworkManager,chronyd,rsyslog,firewalld"
+SERVICE_CHECK_INTERVAL="hourly"
+AUTO_RESTART_FAILED_SERVICES="false"
+
+# Compliance Settings
+AUDIT_LOG_RETENTION="365"
+COMPLIANCE_REPORTING="enabled"
+PCI_DSS_MODE="false"
+SOX_COMPLIANCE="false"
+
+# Performance Tuning
+MAX_CONCURRENT_CHECKS="5"
+TIMEOUT_SECONDS="30"
+CACHE_METRICS="true"
+CACHE_DURATION="300"
+
+# Custom Company Settings
+COMPANY_NAME="Your Company Name"
+ENVIRONMENT_TYPE="production"
+DATACENTER_LOCATION="primary"
+SUPPORT_CONTACT="support@company.com"
