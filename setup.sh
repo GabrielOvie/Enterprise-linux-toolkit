@@ -2,7 +2,7 @@
 
 #################################################################
 # Enterprise Linux Toolkit - Quick Setup Script
-# Author: Gabriel - Senior Linux Systems Administrator
+# Author: Gabriel - Linux Systems Administrator
 # Purpose: Automated installation and configuration
 #################################################################
 
